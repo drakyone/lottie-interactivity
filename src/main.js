@@ -741,8 +741,8 @@ export class LottieInteractivity {
       }
     } else {
       if (window.lottie) {
-        this.stop();
         this.player.destroy();
+        this.stop();
         // Removes svg animation contained inside
         this.container.innerHTML = "";
 
